@@ -7,6 +7,12 @@
     </div>
     <div class="page-content">
       <div class="block-title">Catalog</div>
+      <p>Created in <strong>app.js</strong></p>
+      <pre>
+      var catalogView = app.views.create('#view-catalog', {
+        url: '/catalog/'
+      });
+      </pre>
     </div>
   </div>
 </template>
@@ -17,6 +23,11 @@
       return {
         products: []
       };
+    },
+    on: {
+      pageInit: function(e, page) {
+        console.log('Catalog: Called once only during application init');
+      }
     }
   };
 </script>
