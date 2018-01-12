@@ -15,4 +15,4 @@ npm run serve
 
 ## Live Preview
 
-https://gotling.github.io/framework7-template-tabs/
+http://f7-navigate-component-question.surge.sh/
